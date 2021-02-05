@@ -42,8 +42,9 @@ while True:
 
             if guess in splitWord:
                 for i in range(len(splitWord)):
-                    if splitWord[i] == guess:
-                        splitBlankWord[i] = guess
+                    if splitWord[i] != guess:
+                        continue
+                    splitBlankWord[i] = guess
 
             else:
                 print(f"Incorrect guess. {guess} is not a character in the word. ")
