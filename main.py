@@ -38,7 +38,7 @@ while True:
         )  # Splits the blank word into single characters
 
         while chances != 0 and splitBlankWord != splitWord:
-            guess = input(f"Guess a letter: {splitBlankWord}")
+            guess = input(f"Guess a letter: {splitBlankWord}").lower()
 
             if guess in splitWord:
                 for i in range(len(splitWord)):
